@@ -1,0 +1,161 @@
+.dashboard {
+  padding: 40px;
+  background: #f5f7fa;
+  min-height: 100vh;
+}
+
+.dashboard h1 {
+  margin-bottom: 10px;
+}
+
+.dashboard-subtitle {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.dashboard-cards {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.dashboard-card {
+  background: white;
+  padding: 25px;
+  width: 220px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-card h3 {
+  margin-bottom: 10px;
+}
+
+.dashboard-card h2 {
+  font-size: 32px;
+}
+
+.analytics-section {
+  margin-top: 45px;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.product-view-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.product-view-card {
+  background: #f8fafc;
+  padding: 20px;
+  width: 220px;
+  border-radius: 10px;
+}
+
+.chart-container {
+  width: 100%;
+  height: 350px;
+  margin-top: 20px;
+}
+
+.dashboard-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  padding: 8px 14px;
+  border-radius: 20px;
+  background: white;
+  font-size: 14px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.status-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #22c55e;
+}
+@media (max-width: 768px) {
+  .dashboard {
+    padding: 20px;
+  }
+
+  .dashboard-cards {
+    flex-direction: column;
+  }
+
+  .dashboard-card {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .product-view-cards {
+    flex-direction: column;
+  }
+
+  .product-view-card {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .chart-container {
+    height: 300px;
+  }
+  .recent-events {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.event-card {
+  padding: 18px 20px;
+  border-radius: 10px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.event-card h3 {
+  margin: 0 0 8px 0;
+  font-size: 18px;
+}
+
+.event-card p {
+  margin: 5px 0;
+  color: #555;
+}
+.refresh-button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.refresh-button:hover {
+  background: #1d4ed8;
+}
+
+.refresh-button:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+}
+.loading-message {
+  display: inline-block;
+  margin-left: 12px;
+  font-size: 14px;
+  color: #64748b;
+}
+}

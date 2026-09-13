@@ -1,0 +1,24 @@
+# Python
+backend/venv/
+backend/__pycache__/
+*.pyc
+
+# Node
+frontend/node_modules/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# AWS credentials
+.aws/
+credentials
+config
+
+# IDE
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
